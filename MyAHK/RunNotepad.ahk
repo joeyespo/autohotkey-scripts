@@ -1,3 +1,5 @@
+; By Joe Esposito
+
 #n::
 SetTitleMatchMode, 2
 If WinExist("Untitled - Notepad")

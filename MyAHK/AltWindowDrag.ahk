@@ -1,3 +1,5 @@
+; By How-To Geek
+; Modified by Joe Esposito
 ; Origin: http://www.howtogeek.com/howto/windows-vista/get-the-linux-altwindow-drag-functionality-in-windows/
 ; 
 ; This script modified from the original: http://www.autohotkey.com/docs/scripts/EasyWindowDrag.htm

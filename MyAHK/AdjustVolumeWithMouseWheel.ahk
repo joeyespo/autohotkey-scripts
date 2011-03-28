@@ -1,3 +1,5 @@
+; By AutoHotkey member Lexikos
+; Modified by Joe Esposito
 ; Origin: http://www.autohotkey.net/~Lexikos/AutoHotkey_L/docs/commands/_If.htm
 
 #If MouseIsOver("ahk_class Shell_TrayWnd")

@@ -1,3 +1,5 @@
+; By How-To Geek
+; Modified by Joe Esposito
 ; Origin: http://www.howtogeek.com/howto/keyboard-ninja/keyboard-ninja-toggle-hidden-files-with-a-shortcut-key-in-windows/
 
 ; WINDOWS KEY + H TOGGLES HIDDEN FILES

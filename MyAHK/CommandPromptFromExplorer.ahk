@@ -1,3 +1,5 @@
+; By Lifehacker reader Kevin
+; Modified by Joe Esposito
 ; Origin: http://lifehacker.com/#!5306401/open-a-new-command-prompt-from-explorer-with-a-hotkey
 
 #IfWinActive ahk_class CabinetWClass    ; For use in explorer only
