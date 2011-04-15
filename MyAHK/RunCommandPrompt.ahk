@@ -15,12 +15,8 @@ ClipSaved =
 Return
 #IfWinActive
 
-; Only do this within the desktop
-#IfWinActive ahk_class Progman
-#c::
-#IfWinActive ahk_class WorkerW
-#c::
-#IfWinActive ahk_class Shell_TrayWnd
+; Do this anywhere else
+#IfWinNotActive ahk_class CabinetWClass
 #c::
 Run, cmd /K "cd `"%HOMEPATH%`\Desktop""
 Return

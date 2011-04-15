@@ -6,6 +6,6 @@
 #include MyAHK\CapsLockSearch.ahk
 #include MyAHK\CloseAppsWithCtrlW.ahk
 #include MyAHK\PasteInCommandPrompt.ahk
-#include MyAHK\RunCommandPromptFromExplorer.ahk
+#include MyAHK\RunCommandPrompt.ahk
 #include MyAHK\RunNotepad.ahk
 #include MyAHK\ToggleHiddenFiles.ahk
