@@ -9,3 +9,4 @@
 #include MyAHK\RunCommandPrompt.ahk
 #include MyAHK\RunNotepad.ahk
 #include MyAHK\ToggleHiddenFiles.ahk
+#include MyAHK\Win7BackspaceGoUp.ahk
