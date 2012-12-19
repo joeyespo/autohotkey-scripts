@@ -1,19 +1,27 @@
 My AutoHotkey Scripts
----------------------
+=====================
 
-This is a compilation of my favorite AutoHotkey scripts.
+A compilation of my favorite AutoHotkey scripts.
 Some of these have been downloaded and tweaked. Others were
-written by me. Each individual ahk file indicates which.
+written by me. Each individual .ahk file indicates which.
 
 
 Scripts Included
 ----------------
 
+### Behavior
+
 - Adjust volume with the mouse wheel, and mute/unmute with middle button click
-- Alt+LButton to drag windows from anywhere, instead of by using the title bar
-- Capslock key will open a new Google page; Shift+Capslock is the old capslock
-- Ctrl+V will paste text from the clipboard when working within command prompt
-- WindowsKey+N to run or activate Notepad; WindowsKey+H to toggle hidden files
+- Disable `Capslock`, use `Shift+Capslock` to deliberately use it instead
+- Move windows with `Alt+LButton` + drag
+
+### Key Sequences
+
+- `Backspace` to visit the parent directory in Explorer on Windows 7
+- `Ctrl+V` pastes text from the clipboard within the terminal
+- `WindowsKey+W` closes various windows, including terminal
+- `WindowsKey+N` runs or activates Notepad
+- `WindowsKey+H` toggles hidden files
 
 
 Dependencies
