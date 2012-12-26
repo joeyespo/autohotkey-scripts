@@ -2,8 +2,8 @@ My AutoHotkey Scripts
 =====================
 
 A compilation of my favorite AutoHotkey scripts.
-Some of these have been downloaded and tweaked. Others were
-written by me. Each individual .ahk file indicates which.
+Some of these have been downloaded and tweaked, others
+written by me, as indicated in each individual .ahk file.
 
 
 Scripts Included
