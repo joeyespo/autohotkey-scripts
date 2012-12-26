@@ -9,13 +9,13 @@ ControlGetText, AddressText, Edit1
 IfExist %AddressText%
     Run, cmd /K "cd `"%AddressText%`""
 Else
-    Run, cmd /K "cd `"%HOMEPATH%`\Desktop""
+    Run, cmd /K "cd `"%A_Desktop%`""
 Return
 #IfWinActive
 
 ; Do this anywhere else
 #IfWinNotActive ahk_class CabinetWClass
 #c::
-Run, cmd /K "cd `"%HOMEPATH%`\Desktop""
+Run, cmd /K "cd `"%A_Desktop%`""
 Return
 #IfWinActive
