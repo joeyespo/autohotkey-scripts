@@ -4,17 +4,17 @@
 
 #If MouseIsOver("ahk_class Shell_TrayWnd")
 WheelUp::
-Send {Volume_Up}
+SendInput {Volume_Up}
 SoundPlay *-1
 return
 
 WheelDown::
-Send {Volume_Down}
+SendInput {Volume_Down}
 SoundPlay *-1
 return
 
 MButton::
-Send {Volume_Mute}
+SendInput {Volume_Mute}
 SoundPlay *-1
 return
 #If
