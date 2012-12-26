@@ -5,13 +5,8 @@
 ; Only do this within Explorer
 #IfWinActive ahk_class CabinetWClass
 #c::
-ClipSaved := ClipboardAll
-Send !d
-Sleep 10
-Send ^c
-Run, cmd /K "cd `"%clipboard%`""
-Clipboard := ClipSaved
-ClipSaved =
+ControlGetText, AddressText, Edit1
+Run, cmd /K "cd `"%AddressText%`""
 Return
 #IfWinActive
 
