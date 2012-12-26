@@ -6,7 +6,10 @@
 #IfWinActive ahk_class CabinetWClass
 #c::
 ControlGetText, AddressText, Edit1
-Run, cmd /K "cd `"%AddressText%`""
+IfExist %AddressText%
+    Run, cmd /K "cd `"%AddressText%`""
+Else
+    Run, cmd /K "cd `"%HOMEPATH%`\Desktop""
 Return
 #IfWinActive
 
