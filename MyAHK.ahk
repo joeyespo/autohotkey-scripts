@@ -5,6 +5,7 @@
 #include MyAHK\AltWindowDrag.ahk
 #include MyAHK\CloseAppsWithCtrlW.ahk
 #include MyAHK\DisableCapsLock.ahk
+#include MyAHK\DisableF1.ahk
 #include MyAHK\PasteInCommandPrompt.ahk
 #include MyAHK\RunCommandPrompt.ahk
 #include MyAHK\RunNotepad.ahk
