@@ -12,7 +12,8 @@ Scripts Included
 ### Behavior
 
 - Adjust volume with the mouse wheel, and mute/unmute with middle button click
-- Disable `Capslock`, use `Shift+Capslock` to deliberately use it instead
+- Disable `Capslock`, use `Shift+Capslock` for deliberate use
+- Disable `F1`, use `Ctrl+F1` for deliberate use
 - Move windows with `Alt+LButton` + drag
 
 ### Key Sequences
