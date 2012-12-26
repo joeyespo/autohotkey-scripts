@@ -3,3 +3,17 @@
 ; Use Shift+Capslock for normal capslock behavior instead.
 
 Capslock::Return
+!Capslock::Return
+^Capslock::Return
+^!Capslock::Return
+#Capslock::Return
+#!Capslock::Return
+#^Capslock::Return
+#^!Capslock::Return
++!Capslock::Return
++^Capslock::Return
++^!Capslock::Return
++#Capslock::Return
++#!Capslock::Return
++#^Capslock::Return
++#^!Capslock::Return
