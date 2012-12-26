@@ -27,7 +27,7 @@ Scripts Included
 Dependencies
 ------------
 
-[AutoHotkey](http://www.autohotkey.com/)
+[AutoHotkey][]
 
 
 Usage
@@ -35,3 +35,6 @@ Usage
 
 Run "MyAHK.ahk" or "MyAHK.exe" The utility will sit in the notification area
 while it's active. To stop the script, right-click the icon and select Exit.
+
+
+[AutoHotkey]: http://www.autohotkey.com/
