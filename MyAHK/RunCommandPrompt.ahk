@@ -5,7 +5,7 @@
 ; Only do this within Explorer
 #IfWinActive ahk_class CabinetWClass
 #c::
-ControlGetText, AddressText, Edit1
+WinGetTitle, AddressText
 IfExist %AddressText%
     Run, cmd /K "cd `"%AddressText%`""
 Else
