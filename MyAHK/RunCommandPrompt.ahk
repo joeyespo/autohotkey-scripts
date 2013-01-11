@@ -9,7 +9,13 @@ WinGetTitle, AddressText
 IfExist %AddressText%
     Run, cmd /K "cd `"%AddressText%`""
 Else
-    Run, cmd /K "cd `"%A_Desktop%`""
+{
+    ControlGetText, AddressText, Edit1
+    IfExist %AddressText%
+        Run, cmd /K "cd `"%AddressText%`""
+    Else
+        Run, cmd /K "cd `"%A_Desktop%`""
+}
 Return
 #IfWinActive
 
