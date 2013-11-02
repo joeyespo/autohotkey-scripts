@@ -1,7 +1,7 @@
 My AutoHotkey Scripts
 =====================
 
-A compilation of my favorite AutoHotkey scripts.
+A compilation of my favorite [AutoHotkey][] scripts.
 Some of these have been downloaded and tweaked, others
 written by me, as indicated in each individual .ahk file.
 
@@ -38,4 +38,4 @@ Run "MyAHK.ahk" or "MyAHK.exe" The utility will sit in the notification area
 while it's active. To stop the script, right-click the icon and select Exit.
 
 
-[AutoHotkey]: http://www.autohotkey.com/
+[AutoHotkey]: http://www.autohotkey.com
