@@ -12,6 +12,7 @@
 #include NewTextDocument.ahk
 #include NotepadCtrlBackspace.ahk
 #include PasteInCommandPrompt.ahk
+#include ReorderHomeKeys.ahk
 #include RunCommandPrompt.ahk
 #include RunNotepad.ahk
 #include RunTortoiseGit.ahk
