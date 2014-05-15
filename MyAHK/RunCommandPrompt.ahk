@@ -11,21 +11,25 @@
 #c::
 WinGetTitle, AddressText
 IfExist %AddressText%
-    Run, cmd /K "cd `"%AddressText%`""
+    Run, cmd, %AddressText%, , CmdPID
 Else
 {
     ControlGetText, AddressText, Edit1
     IfExist %AddressText%
-        Run, cmd /K "cd `"%AddressText%`""
+        Run, cmd, %AddressText%, , CmdPID
     Else
-        Run, cmd /K "cd `"%A_Desktop%`""
+        Run, cmd, %A_Desktop%, , CmdPID
 }
+WinWait ahk_pid %CmdPID%
+WinActivate
 Return
 #IfWinActive
 
 ; Do this anywhere else
 #IfWinNotActive ahk_class CabinetWClass
 #c::
-Run, cmd /K "cd `"%A_Desktop%`""
+Run, cmd, %A_Desktop%, , CmdPID
+WinWait ahk_pid %CmdPID%
+WinActivate
 Return
 #IfWinActive
