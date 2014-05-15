@@ -8,6 +8,8 @@ If WinExist("Untitled - Notepad")
 }
 else
 {
-    Run "Notepad.exe"
+    Run "Notepad.exe", %A_Desktop%, , CmdPID
+    WinWait ahk_pid %CmdPID%
+    WinActivate
 }
 return
