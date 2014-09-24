@@ -9,5 +9,6 @@
 #include %A_ScriptDir%\MyAHK\PasteInCommandPrompt.ahk
 #include %A_ScriptDir%\MyAHK\RunCommandPrompt.ahk
 #include %A_ScriptDir%\MyAHK\RunNotepad.ahk
+#include %A_ScriptDir%\MyAHK\RunTortoiseGit.ahk
 #include %A_ScriptDir%\MyAHK\ToggleHiddenFiles.ahk
 #include %A_ScriptDir%\MyAHK\Win7BackspaceGoUp.ahk
