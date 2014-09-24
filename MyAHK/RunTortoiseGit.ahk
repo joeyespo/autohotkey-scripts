@@ -1,5 +1,5 @@
 ; By Joe Esposito
-; 
+;
 ; NOTE: This script will only work when the following option is on:
 ; - Display the full path in the title bar (Classic theme only)
 ; Turn this on by going to Tools, Folder Options in Explorer.
@@ -13,6 +13,9 @@ Command = sync
 Goto, GetCwd
 #f::
 Command = log
+Goto, GetCwd
+#g::
+Command = switch
 Goto, GetCwd
 
 GetCwd:
@@ -35,6 +38,7 @@ Goto, Run
 #a::
 #s::
 #f::
+#g::
 path = %A_Desktop%
 Goto, Run
 #IfWinActive
