@@ -1,6 +1,11 @@
-; Source:
-; https://autohotkey.com/board/topic/60985-get-paths-of-selected-items-in-an-explorer-window/
+; https://autohotkey.com/docs/commands/WinMove.htm
+CenterWindow(WinTitle)
+{
+  WinGetPos,,, Width, Height, %WinTitle%
+  WinMove, %WinTitle%,, (A_ScreenWidth/2)-(Width/2), (A_ScreenHeight/2)-(Height/2)
+}
 
+; https://autohotkey.com/board/topic/60985-get-paths-of-selected-items-in-an-explorer-window/
 Explorer_GetPath(hwnd="")
 {
   if !(window := Explorer_GetWindow(hwnd))
@@ -20,6 +25,7 @@ Explorer_GetPath(hwnd="")
   return path
 }
 
+; https://autohotkey.com/board/topic/60985-get-paths-of-selected-items-in-an-explorer-window/
 Explorer_GetWindow(hwnd="")
 {
   ; thanks to jethrow for some pointers here

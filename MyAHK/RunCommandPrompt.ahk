@@ -10,6 +10,8 @@
     ExplorerPath := A_Desktop
 
   Run, cmd, %ExplorerPath%, , CmdPID
+
   WinWait ahk_pid %CmdPID%
   WinActivate
+  CenterWindow(A)
 Return
