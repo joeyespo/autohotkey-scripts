@@ -1,51 +1,31 @@
 ; By Joe Esposito
 ;
-; NOTE: This script will only work when the following option is on:
-; - Display the full path in the title bar (Classic theme only)
-; Turn this on by going to Tools, Folder Options in Explorer.
+; NOTE: This requires TortoiseGit to be is installed in C:\Program Files
 
-#IfWinActive ahk_class CabinetWClass
+#include Helpers.ahk
+
 #a::
 Command = commit
-Goto, GetCwd
+Goto, RunTortoise
 #s::
 Command = sync
-Goto, GetCwd
+Goto, RunTortoise
 #f::
 Command = log
-Goto, GetCwd
+Goto, RunTortoise
 #g::
 Command = switch
-Goto, GetCwd
+Goto, RunTortoise
+#z::
+Command = rebase
+Goto, RunTortoise
 
-GetCwd:
-WinGetTitle, AddressText
-IfExist %AddressText%
-    path = %AddressText%
-Else
-{
-    ControlGetText, AddressText, Edit1
-    IfExist %AddressText%
-        path = %AddressText%
-    Else
-        path = %A_Desktop%
-}
-Goto, Run
-#IfWinActive
+RunTortoise:
+ExplorerPath := Explorer_GetPath()
+If ErrorLevel
+  ExplorerPath := A_Desktop
 
-; Do this anywhere else
-#IfWinNotActive ahk_class CabinetWClass
-#a::
-#s::
-#f::
-#g::
-path = %A_Desktop%
-Goto, Run
-#IfWinActive
-
-Run:
-; TODO: Find TortoiseGitProc another way
-Run, C:\Program Files\TortoiseGit\bin\TortoiseGitProc.exe /command:%Command% /path:%path%, %path%, , CmdPID
+Run, C:\Program Files\TortoiseGit\bin\TortoiseGitProc.exe /command:%Command% /path:"%ExplorerPath%", %ExplorerPath%, , CmdPID
 WinWait ahk_pid %CmdPID%
 WinActivate
 Return
