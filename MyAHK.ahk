@@ -1,14 +1,16 @@
 ; By Joe Esposito
 ; Open the following individual files for more information
 
-#include %A_ScriptDir%\MyAHK\AdjustVolumeWithMouseWheel.ahk
-#include %A_ScriptDir%\MyAHK\AltWindowDrag.ahk
-#include %A_ScriptDir%\MyAHK\CloseAppsWithCtrlW.ahk
-#include %A_ScriptDir%\MyAHK\DisableCapsLock.ahk
-#include %A_ScriptDir%\MyAHK\DisableF1.ahk
-#include %A_ScriptDir%\MyAHK\PasteInCommandPrompt.ahk
-#include %A_ScriptDir%\MyAHK\RunCommandPrompt.ahk
-#include %A_ScriptDir%\MyAHK\RunNotepad.ahk
-#include %A_ScriptDir%\MyAHK\RunTortoiseGit.ahk
-#include %A_ScriptDir%\MyAHK\ToggleHiddenFiles.ahk
-#include %A_ScriptDir%\MyAHK\Win7BackspaceGoUp.ahk
+#include %A_ScriptDir%\MyAHK
+
+#include AdjustVolumeWithMouseWheel.ahk
+#include AltWindowDrag.ahk
+#include CloseAppsWithCtrlW.ahk
+#include DisableCapsLock.ahk
+#include DisableF1.ahk
+#include PasteInCommandPrompt.ahk
+#include RunCommandPrompt.ahk
+#include RunNotepad.ahk
+#include RunTortoiseGit.ahk
+#include ToggleHiddenFiles.ahk
+#include Win7BackspaceGoUp.ahk
