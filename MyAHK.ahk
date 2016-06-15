@@ -8,6 +8,7 @@
 #include CloseAppsWithCtrlW.ahk
 #include DisableCapsLock.ahk
 #include DisableF1.ahk
+#include NewTextDocument.ahk
 #include PasteInCommandPrompt.ahk
 #include RunCommandPrompt.ahk
 #include RunNotepad.ahk
