@@ -37,7 +37,7 @@ Explorer_GetWindow(hwnd="")
   if (class ~= "(Cabinet|Explore)WClass")
   {
     for window in ComObjCreate("Shell.Application").Windows
-      if (window.hwnd==hwnd)
+      if (window And window.hwnd==hwnd)
         return window
   }
   else if (class ~= "Progman|WorkerW")
