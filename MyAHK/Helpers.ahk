@@ -1,8 +1,24 @@
 ; https://autohotkey.com/docs/commands/WinMove.htm
 CenterWindow(WinTitle)
 {
-  WinGetPos,,, Width, Height, %WinTitle%
-  WinMove, %WinTitle%,, (A_ScreenWidth/2)-(Width/2), (A_ScreenHeight/2)-(Height/2)
+  WinGet, WinState, MinMax, %WinTitle%
+  if WinState = 0  ; Only if the window isn't maximized
+  {
+    WinGetPos,,, Width, Height, %WinTitle%
+    WinMove, %WinTitle%,, (A_ScreenWidth/2)-(Width/2), (A_ScreenHeight/2)-(Height/2)
+  }
+
+}
+
+CenterWindowById(WinId)
+{
+  WinGet, WinState, MinMax, ahk_id %WinId%
+  if WinState = 0  ; Only if the window isn't maximized
+  {
+    WinGetPos,,, Width, Height, ahk_id %WinId%
+    WinMove, ahk_id %WinId%,, (A_ScreenWidth/2)-(Width/2), (A_ScreenHeight/2)-(Height/2)
+  }
+
 }
 
 ; https://autohotkey.com/board/topic/60985-get-paths-of-selected-items-in-an-explorer-window/

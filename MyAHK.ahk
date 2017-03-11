@@ -4,7 +4,7 @@
 #include %A_ScriptDir%\MyAHK
 
 #include AdjustVolumeWithMouseWheel.ahk
-#include AltWindowDrag.ahk
+#include CenterAndDragWindow.ahk
 #include CloseAppsWithCtrlW.ahk
 #include DisableCapsLock.ahk
 #include DisableF1.ahk
