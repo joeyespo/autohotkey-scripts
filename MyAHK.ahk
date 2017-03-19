@@ -7,6 +7,7 @@
 #include CenterAndDragWindow.ahk
 #include CloseAppsWithCtrlW.ahk
 #include DisableCapsLock.ahk
+#include DisableCtrlQ.ahk
 #include DisableF1.ahk
 #include NewTextDocument.ahk
 #include PasteInCommandPrompt.ahk
