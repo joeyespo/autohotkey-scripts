@@ -10,6 +10,7 @@
 #include DisableCtrlQ.ahk
 #include DisableF1.ahk
 #include NewTextDocument.ahk
+#include NotepadCtrlBackspace.ahk
 #include PasteInCommandPrompt.ahk
 #include RunCommandPrompt.ahk
 #include RunNotepad.ahk
