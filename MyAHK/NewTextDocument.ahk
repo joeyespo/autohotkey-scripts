@@ -4,6 +4,11 @@
 #If WinActive("ahk_class CabinetWClass") or WinActive("ahk_class Progman") or WinActive("ahk_class WorkerW")
 !^n::
 +#n::
+selected := Explorer_GetSelected()
+If selected
+{
+  Send {Down}{Up}^{Space}
+}
 Send {Esc}{F5}{Appskey}{w}{t}
 Return
 #If
