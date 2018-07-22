@@ -16,13 +16,21 @@ Scripts Included
 - Disable `F1`, use `Ctrl+F1` for deliberate use
 - Move windows with `Alt+LButton` + drag
 
-### Key Sequences
+### Global Key Sequences
 
-- `Backspace` to visit the parent directory in Explorer on Windows 7
-- `Ctrl+V` pastes text from the clipboard within the terminal
 - `WindowsKey+W` closes various windows, including terminal
 - `WindowsKey+N` runs or activates Notepad
-- `WindowsKey+H` toggles hidden files
+
+### Commandline Key Sequences
+
+- `Ctrl+V` pastes text from the clipboard within the commandline
+
+### Explorer Key Sequences
+
+- `Backspace` to visit the parent directory
+- `Ctrl+Alt+N` to create a new Text Document
+- `Ctrl+Alt+D` adds or removes a `.` prefix to the filename to overcome the "You must type a file name" limitation
+- `WindowsKey+H` to toggle hidden files
 
 
 Dependencies
