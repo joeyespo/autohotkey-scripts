@@ -6,7 +6,7 @@
 
 PreWin10() {
   StringSplit, Array, A_OSVersion, .
-  if Array1 < 10
+  If InStr(A_OSVersion, "WIN_") Or Array < 10
       Return True
   Else
       Return False
