@@ -1,9 +1,9 @@
 ; By Joe Esposito
 
-#IfWinActive ahk_class Notepad
+#If WinActive("ahk_class Notepad")
 ^w::SendInput !{F4}
 #IfWinActive
 
-#IfWinActive ahk_class ConsoleWindowClass
+#If WinActive("ahk_class ConsoleWindowClass")
 ^w::SendInput !{F4}
 #IfWinActive
