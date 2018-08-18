@@ -15,6 +15,7 @@
 #include NotepadCtrlBackspace.ahk
 #include PasteInCommandPrompt.ahk
 #include PasteShortcut.ahk
+#include RunCmder.ahk
 #include RunCommandPrompt.ahk
 #include RunNotepad.ahk
 #include RunTortoiseGit.ahk
