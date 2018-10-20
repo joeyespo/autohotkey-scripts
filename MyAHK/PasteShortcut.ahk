@@ -12,11 +12,33 @@
   {
     SplitPath, Target, Filename, FileDir, FileExt
     ExtLen := 0
+    Source := ""
     If (FileExt = "lnk")
     {
       ExtLen := StrLen(FileExt) + 1
     }
-    LinkTitle := SubStr(Filename, 1, StrLen(Filename) - ExtLen) . ".lnk"
+    Else If (StrLen(FileExt) == 0)
+    {
+      CurrentFileDir := FileDir
+      Loop
+      {
+        SplitPath, CurrentFileDir, ParentFilename, ParentFileDir
+        CurrentFileDir := ParentFileDir
+
+        If (ParentFilename = "timeline")
+          Continue
+
+        ParentFilenameChar := SubStr(ParentFilename, 1, 1)
+        If ParentFilenameChar is Number
+          Continue
+
+        If (StrLen(ParentFilename) > 0)
+          Source := " (" . ParentFilename . ")"
+
+        Break
+      }
+    }
+    LinkTitle := SubStr(Filename, 1, StrLen(Filename) - ExtLen) . Source . ".lnk"
     LinkFile := ExplorerPath . "\" . LinkTitle
     FileCreateShortcut, %Target%, %LinkFile%
     If (ErrorLevel = 0)
