@@ -27,9 +27,11 @@
           Break
         Sleep 250
       }
+      Sleep 100
       Send {F5}{Home}
       Sleep 250
-      Send %LinkTitle%
+      TypeLinkTitle := SubStr(Filename, 1, 8)
+      Send %TypeLinkTitle%
     }
   }
 Return
