@@ -33,7 +33,7 @@
           Continue
 
         If (StrLen(ParentFilename) > 0)
-          Source := " (" . ParentFilename . ")"
+          Source := " " . (ParentFilenameChar == "(" ? ParentFilename : "(" . ParentFilename . ")")
 
         Break
       }
