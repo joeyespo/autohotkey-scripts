@@ -11,6 +11,7 @@
 #include DisableF1.ahk
 #include DisableWinArrow.ahk
 #include Dotify.ahk
+#include NewDirectoryWithName.ahk
 #include NewTextDocument.ahk
 #include NotepadCtrlBackspace.ahk
 #include PasteInCommandPrompt.ahk

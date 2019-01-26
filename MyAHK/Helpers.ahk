@@ -78,13 +78,12 @@ Explorer_Get(hwnd="",selection=false)
     ControlGet, hwWindow, HWND,, SysListView321, ahk_class Progman
     if !hwWindow ; #D mode
       ControlGet, hwWindow, HWND,, SysListView321, A
-    ControlGet, files, List, % ( selection ? "Selected":"") "Col1",,ahk_id %hwWindow%
+    ControlGet, files, List, % ( selection ? "Selected":"") . "Col1",,ahk_id %hwWindow%
     base := SubStr(A_Desktop,0,1)=="\" ? SubStr(A_Desktop,1,-1) : A_Desktop
     Loop, Parse, files, `n, `r
     {
       path := base "\" A_LoopField
-      IfExist %path% ; ignore special icons like Computer (at least for now)
-        ret .= path "`n"
+      ret .= path "`n"
     }
   }
   else
