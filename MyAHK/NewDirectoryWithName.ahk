@@ -36,13 +36,21 @@ For Index, Element in Elements
     FileCreateDir, %Path%
   }
 
-  Send {F5}
-  If (IsDesktopFocused)
+  Tries := 0
+  Loop
   {
-    Sleep, 100
+    If FileExist(Path)
+      Break
+    If Tries > 100
+      Return
+    Sleep 250
+    Tries := Tries + 1
   }
-  Send {Home}
-  Send %Name%
+  Sleep 100
+  Send {F5}{Home}
+  Sleep 250
+  TypeLinkTitle := SubStr(Name, 1, 8)
+  Send %TypeLinkTitle%
   Send {F2}
 }
 Return
