@@ -78,11 +78,23 @@ Explorer_Get(hwnd="",selection=false)
     ControlGet, hwWindow, HWND,, SysListView321, ahk_class Progman
     if !hwWindow ; #D mode
       ControlGet, hwWindow, HWND,, SysListView321, A
-    ControlGet, files, List, % ( selection ? "Selected":"") . "Col1",,ahk_id %hwWindow%
+    ; TODO: Revert or remove: ControlGet, files, List, % ( selection ? "Selected":"") . "Col1",,ahk_id %hwWindow%
+    ControlGet, files, List, % ( selection ? "Selected":""),,ahk_id %hwWindow%
     base := SubStr(A_Desktop,0,1)=="\" ? SubStr(A_Desktop,1,-1) : A_Desktop
     Loop, Parse, files, `n, `r
     {
-      path := base "\" A_LoopField
+      fileColumns := StrSplit(files, A_Tab)
+      fileName := fileColumns[1]
+      fileType := fileColumns[3]
+      fileExt := SubStr(fileName, -4)
+      StringLower, fileExt, fileExt
+      if (fileType = "Shortcut" and fileExt != ".url") {
+        fileName := fileName . ".url"
+      }
+      if (fileType = "Internet Shortcut" and fileExt != ".lnk") {
+        fileName := fileName . ".lnk"
+      }
+      path := base "\" fileName
       ret .= path "`n"
     }
   }
