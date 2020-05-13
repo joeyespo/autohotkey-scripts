@@ -3,6 +3,7 @@
 
 #include %A_ScriptDir%\MyAHK
 
+#include ActivateCurrentBrowser.ahk
 #include AdjustVolumeWithMouseWheel.ahk
 #include CenterAndDragWindow.ahk
 #include CloseAppsWithCtrlW.ahk
