@@ -5,6 +5,7 @@
 
 #include ActivateCurrentBrowser.ahk
 #include AdjustVolumeWithMouseWheel.ahk
+#include CenterNewExplorerWindows.ahk
 #include CenterWindow.ahk
 #include DragWindow.ahk
 #include CloseAppsWithCtrlW.ahk
