@@ -1,6 +1,8 @@
 ; By Joe Esposito
 ; Origin: https://www.autohotkey.com/boards/viewtopic.php?t=60831
 
+#Persistent
+
 #include Helpers.ahk
 
 On_Message(event, hwnd)
@@ -13,6 +15,9 @@ On_Message(event, hwnd)
     Static SH_MsgNum := DllCall("RegisterWindowMessage", Str, "SHELLHOOK")
     Static RunAtScriptExecutionRegister := DllCall("RegisterShellHookWindow", UInt, A_ScriptHwnd)
     Static RunAtScriptExecution := OnMessage(SH_MsgNum, Func("On_Message"), 1000)
+
+    ; Unregister on exit
+    Static RunAtScriptExit := OnExit("On_Exit")
 
     ; Check for activate event
     ; HSHELL_WINDOWACTIVATED = 4
@@ -36,6 +41,19 @@ On_Message(event, hwnd)
         Return
     }
 
+    ; Check current window size and center only if available
+    WinGetPos, , , Width, Height, % "ahk_id" hwnd
+    If (!Width || !Height || Width < 300 || Height < 400)
+    {
+        Return
+    }
+
     ; Center the new Explorer window
     CenterWindowById(hwnd)
+}
+
+On_Exit(ExitReason, ExitCode)
+{
+    ; Unregister if previously registered
+    Static RunAtScriptExitUnregister := DllCall("UnregisterShellHookWindow", UInt, A_ScriptHwnd)
 }
