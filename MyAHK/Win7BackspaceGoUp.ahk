@@ -14,4 +14,5 @@ Backspace::
     {
         Send {Backspace}
     }
+    Return
 #IfWinActive

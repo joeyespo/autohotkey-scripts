@@ -50,10 +50,12 @@ On_Message(event, hwnd)
 
     ; Center the new Explorer window
     CenterWindowById(hwnd)
+    Return
 }
 
 On_Exit(ExitReason, ExitCode)
 {
     ; Unregister if previously registered
     Static RunAtScriptExitUnregister := DllCall("UnregisterShellHookWindow", UInt, A_ScriptHwnd)
+    Return
 }
