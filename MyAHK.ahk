@@ -25,3 +25,4 @@
 #include RunTortoiseGit.ahk
 #include ToggleHiddenFiles.ahk
 #include Win7BackspaceGoUp.ahk
+#include WinFnMediaControls.ahk
