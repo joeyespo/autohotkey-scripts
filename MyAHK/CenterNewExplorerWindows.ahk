@@ -28,8 +28,8 @@ On_Message(event, hwnd)
     }
 
     ; Check for Explorer window
-    WinGetClass, ClassValue, % "ahk_id" hwnd
-    If ((ClassValue <> "CabinetWClass") && (ClassValue <> "ExploreWClass") && (ClassValue <> "#32770"))
+    WinGetClass, ClassValue, % "ahk_id" hwnd " ahk_exe explorer.exe"
+    If (!ClassValue ||(ClassValue <> "CabinetWClass") && (ClassValue <> "ExploreWClass") && (ClassValue <> "#32770"))
     {
         Return
     }
