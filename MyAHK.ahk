@@ -14,6 +14,7 @@
 #include DisableWinArrow.ahk
 #include Dotify.ahk
 #include DragWindow.ahk
+#include MacKeyboardShortcuts.ahk
 #include NewDirectoryWithName.ahk
 #include NewTextDocument.ahk
 #include NotepadCtrlBackspace.ahk
