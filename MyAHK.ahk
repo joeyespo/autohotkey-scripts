@@ -10,6 +10,7 @@
 #include CloseAppsWithCtrlW.ahk
 #include DisableCapsLock.ahk
 #include DisableCtrlQ.ahk
+#include DisableCtrlWinD.ahk
 #include DisableF1.ahk
 #include DisableWinArrow.ahk
 #include Dotify.ahk
