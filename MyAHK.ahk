@@ -7,13 +7,13 @@
 #include AdjustVolumeWithMouseWheel.ahk
 #include CenterNewExplorerWindows.ahk
 #include CenterWindow.ahk
-#include DragWindow.ahk
 #include CloseAppsWithCtrlW.ahk
 #include DisableCapsLock.ahk
 #include DisableCtrlQ.ahk
 #include DisableF1.ahk
 #include DisableWinArrow.ahk
 #include Dotify.ahk
+#include DragWindow.ahk
 #include NewDirectoryWithName.ahk
 #include NewTextDocument.ahk
 #include NotepadCtrlBackspace.ahk
